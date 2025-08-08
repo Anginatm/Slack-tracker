@@ -1,0 +1,14 @@
+Start Everything: npm run dev (already running)
+
+🌐 Web Dashboard URLs:
+• Status Page: http://localhost:3000/status (Overview & Quick Access)
+• Team Dashboard: http://localhost:3000/ (All Users View)
+• Individual Dashboard: http://localhost:3000/individual (Single User View)
+
+📊 API Endpoints:
+• System Status: http://localhost:3000/api/status
+• All Users: http://localhost:3000/api/users
+• Time Data: http://localhost:3000/api/data
+• Daily Report: http://localhost:3000/api/report
+
+🔄 Monitor Terminal: See real-time updates for all users

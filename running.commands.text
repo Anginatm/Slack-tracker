@@ -1,0 +1,14 @@
+# Start both web server and time tracking
+npm run dev
+
+# Or start individually:
+node web-server.js web 3000    # Web dashboard
+node runner.js start          # Time tracking
+
+Test Your Application:
+Main Dashboard: http://localhost:3000/
+Simple Dashboard: http://localhost:3000/simple
+API Endpoints:
+http://localhost:3000/api/users
+http://localhost:3000/api/data
+http://localhost:3000/api/status
