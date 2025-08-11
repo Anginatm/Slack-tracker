@@ -1,0 +1,31 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo "Installing dependencies..."
+            - npm install
+        build:
+          commands:
+            - echo "Building application..."
+            - npm run build
+            - echo "Creating dist directory..."
+            - mkdir -p dist
+            - echo "Copying application files..."
+            - cp -r *.html dist/ 2>/dev/null || true
+            - cp -r *.js dist/ 2>/dev/null || true
+            - cp -r *.json dist/ 2>/dev/null || true
+            - cp -r *.md dist/ 2>/dev/null || true
+            - cp -r public dist/ 2>/dev/null || true
+            - cp -r api dist/ 2>/dev/null || true
+            - cp -r netlify dist/ 2>/dev/null || true
+            - echo "Build completed successfully"
+      artifacts:
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+    appRoot: .
