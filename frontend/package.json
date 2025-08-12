@@ -1,0 +1,23 @@
+{
+  "name": "slack-time-tracker-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Slack Time Tracker - Deployable to AWS Amplify",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "echo 'Frontend development server - use backend for full functionality'"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.1"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [
+    "slack",
+    "time-tracking",
+    "frontend",
+    "dashboard"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
